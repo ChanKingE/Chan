@@ -1,99 +1,45 @@
-@charset "utf-8";
 body{
-	background-color: rgba(48,48,48,1.00);
+	background-image: url(../images/body.gif);
 	margin: 0;
-	animation: mymove 2.0s forwards;
 }
-@keyframes mymove
-{
-	0%{
-		transform: translate(0,-250px);
-	}
-	to{
-		
-	}
+a{
+	color: #000;
+	text-decoration: none;
 }
-
-#Bigbox{
-	width: 1125px;
-	min-width: 1125px;
+p{
+	text-indent: 2pc;
+	font-size: 12px;
+	line-height: 30px;
+}
+#bigbox{
+	margin: 0 auto;
+	width: 960px;
+	background-color: rgba(255,255,255,1.00);	
+}
+#text{
+	width: 900px;
 	margin: 0 auto;
 }
-#top{
-    height: 200px;
-    width: 1125px;
-    overflow: hidden;
-    position: relative;
-    background-color: hsla(0,0%,100%,1.00);
+#text h4{
+	text-align: center;
 }
-#center_left{
-	float: left;
-	width: 450px;
-    height: 400px;
-	overflow: hidden;
-    position: relative;
-	background-color: hsla(12,4%,27%,1.00);	
+#text .date{
+	color: #666;
+	border-top: 1px dashed #666;
+	text-align: right;
+	font-size: 13px;
 }
-#center_right{
-	float:left;
-	height: 200px;
-    width: 675px;
-    overflow: hidden;
-    position: relative;
-    background-color: hsla(0,0%,100%,1.00);
+.photo{
+	margin: 0 auto;
+	width: 500px;	
 }
-.view{
-	float: left;
+.redfont{
+	color: rgba(195,17,3,1.00);
 }
-
-
-/*box是空白盒子*/
-#box{
-    float: left;
-    width: 225px;
-    height: 200px;
-    background-color: hsla(12,4%,27%,1.00);
-    overflow: hidden;/*溢出的画面隐藏*/
-    position: relative;/*相对位置*/
-}
-/*底部*/
-#bottom{
-    background-color: rgba(71,67,66,1.00);
-}
-.copyright{
-    text-align: center;
-    font-weight: bolder;
-    color: #FFFFFF;
-    line-height: 50px;
-    background-color: rgba(46,221,142,0.5);
-}
-/*实时时间*/
-#time1{
-    text-align: center;
-    line-height: 50px;
-    background-color: rgba(92,106,185,0.25);
-	animation: time 3.0s forwards;
-}
-@keyframes time
-{
-	0%,50%{
-		background-color: rgba(0,0,0,1.00);
-		transform: scale(0.00,0.00);
-	}
-	75%{
-		background-color: rgba(92,106,185,0.50);
-		transform: scale(1.25,1.25);
-	}
-	to{
-		background-color: rgba(92,106,185,0.25);
-	}
-}
-/*历史记录*/
-.history{
-    margin: -666px -250px;
-    width: 200px;
-    float: left;
-    color: rgba(255,255,255,1.00);
-    text-align: center;
-    position: relative;
+#copyright{
+	background-color: rgba(178,166,149,1.00);
+	font-size: 13px;
+	text-align: center;
+	margin: 10px 0;
+	padding: 25px 0;
 }
